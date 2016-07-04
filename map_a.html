@@ -14,21 +14,19 @@
 	<!-- SEO：検索対策のキーワード -->
 	<meta name="keywords" content=" " />
 	<meta name="robots" content="index,follow" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>宇部松島町商店街駐車場入出庫システム</title>
 	<style>
 		/* For PC */
-		body,html{ margin: 0; padding: 0; font-family: monospace; }
+		body,html{ margin: 0; padding: 0; font-family: monospace; background: #000; }
 		div { margin-top: 1px; }
+		.container { width: 240px; margin: 0 auto; background: #fff; }
 	</style>
 	<!-- テスト用絵文字変換ライブラリ -->
 	<link rel="stylesheet" href="emoji.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="emoji.js"></script>
-	<script src="monaca.viewport.js"></script>
 	<script>
-		monaca.viewport({
-			width: 240
-		});
 		$(function() {
 			var $text = $('body');
 			var html = $text.html().trim().replace(/\n/g, '');
@@ -38,6 +36,7 @@
 	</script>
 </head>
 <body style="font-size: medium">
+<div class="container">
 	<a id="top" name="top"></a>
 	<!-- グローバルヘッダ -->
 	<div style="background:#f2f2f2; text-align:center"><img src="logo.jpg" /></div>
@@ -110,6 +109,6 @@
 	<div><img src="./spacer.gif" width="1" height="10" /></div>
 
 	<div style="text-align: center; color: #222222">&copy;&ensp;宇部市松島町商店街</div>
-
+</div>
 </body>
 </html>
